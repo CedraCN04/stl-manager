@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajouter un fichier — STL Manager</title>
+  </head>
+  <body>
+    <header>
+      <h1>STL Manager</h1>
+    </header>
+
+    <main class="container">
+      <h2 id="form-title">Ajouter un fichier</h2>
+
+      <form
+        class="add-file-form"
+        aria-labelledby="form-title"
+        action="/api/fichiers"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <div class="form-field">
+          <label for="file-name">Nom</label>
+          <input
+            type="text"
+            id="file-name"
+            name="nom"
+            placeholder="le nom de votre pièce"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="file-tags">Tags</label>
+          <input
+            type="text"
+            id="file-tags"
+            name="tags"
+            placeholder="Séparés par des virgules"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="file-material">Matière</label>
+          <input
+            type="text"
+            id="file-material"
+            name="matiere"
+            placeholder="PLA,PETG,Résine"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="upload-stl">Fichier STL</label>
+          <input
+            type="file"
+            id="upload-stl"
+            name="stl"
+            accept=".stl"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="upload-picture">Photo</label>
+          <input
+            type="file"
+            id="upload-picture"
+            name="photo"
+            accept="image/*"
+          />
+        </div>
+
+        <div class="form-actions">
+          <button type="submit">Valider</button>
+          <a href="index.html" class="btn-cancel">Annuler</a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
+
