@@ -6,7 +6,126 @@
     <title>STL Manager</title>
   </head>
   <body>
-    <h1>Hello World !</h1>
+    <header>
+      <h1>STL Manager</h1>
+    </header>
+    <main class="container">
+      <section class="add-and-search">
+        <a href="ajouter.html" class="btn-add">Ajouter un fichier</a>
+        <form role="search" class="search-form">
+          <label for="search" class="visually-hidden">Rechercher :</label>
+          <input
+            type="search"
+            id="search"
+            class="search"
+            placeholder="Rechercher par nom ou tags"
+          />
+          <button type="reset" aria-label="Effacer la recherche">x</button>
+        </form>
+      </section>
+      <section class="files">
+        <article class="card">
+          <img
+            class="file-picture"
+            src="assets/7870.jpg"
+            alt="Photo du pièce mécanique"
+          />
+          <div class="infos">
+            <h2>Piece mécanique</h2>
+            <dl>
+              <dt>Tags</dt>
+              <dd>mecanique, prototype</dd>
+              <dt>Matière</dt>
+              <dd>PLA</dd>
+            </dl>
+          </div>
+          <div class="card-actions">
+            <a href="#" class="btn-download" download>Télécharger</a>
+            <button type="button">Supprimer</button>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            class="file-picture"
+            src="assets/7870.jpg"
+            alt="Photo du support"
+          />
+          <div class="infos">
+            <h2>Support de fixation pour Bobines de filament</h2>
+            <dl>
+              <dt>Tags</dt>
+              <dd>utilitaire, decoration</dd>
+              <dt>Matière</dt>
+              <dd>PETG</dd>
+            </dl>
+          </div>
+          <div class="card-actions">
+            <a href="#" class="btn-download" download>Télécharger</a>
+            <button type="button">Supprimer</button>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            class="file-picture"
+            src="assets/7870.jpg"
+            alt="Photo de la vis"
+          />
+          <div class="infos">
+            <h2>Vis M3</h2>
+            <dl>
+              <dt>Tags</dt>
+              <dd>mecanique, prototype, fixation, utilitaire, quincaillerie</dd>
+              <dt>Matière</dt>
+              <dd>ABS</dd>
+            </dl>
+          </div>
+          <div class="card-actions">
+            <a href="ajouter.html" class="btn-download" download>Télécharger</a>
+            <button type="button">Supprimer</button>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            class="file-picture"
+            src="assets/7870.jpg"
+            alt="Photo de la figurine"
+          />
+          <div class="infos">
+            <h2>Odin</h2>
+            <dl>
+              <dt>Tags</dt>
+              <dd>Figurine</dd>
+              <dt>Matière</dt>
+              <dd>Résine</dd>
+            </dl>
+          </div>
+          <div class="card-actions">
+            <a href="#" class="btn-download" download>Télécharger</a>
+            <button type="button">Supprimer</button>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            class="file-picture"
+            src="assets/placeholder.png"
+            alt="Photo de l'avion"
+          />
+          <div class="infos">
+            <h2>Avion de chasse</h2>
+            <dl>
+              <dt>Tags</dt>
+              <dd>aviation, jouet</dd>
+              <dt>Matière</dt>
+              <dd>PLA</dd>
+            </dl>
+          </div>
+          <div class="card-actions">
+            <a href="#" class="btn-download" download>Télécharger</a>
+            <button type="button">Supprimer</button>
+          </div>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
 
